@@ -11,12 +11,6 @@ jobs:
         with:
           ref: 02-solution-study-case
       
-      - name: Debug Info
-        run: |
-          ls -R
-          env
-          cat ./assets/jsdoc/conf.json
-
       - name: Build
         uses: andstor/jsdoc-action@v1
         with:
